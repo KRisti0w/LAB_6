@@ -3,7 +3,7 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(untitled main.cpp
+add_executable(untitled
         Lab-2/lab-2-3.cpp
         Lab-2/lab-2-1.cpp
         Lab-2/lab-2-4.cpp
@@ -29,4 +29,6 @@ add_executable(untitled main.cpp
         lab-4/lab-4-8.cpp
         lab-5/lab-5-1.cpp
         lab-5/lab-5-1.h
+        lab-6/lab-6-1.cpp
+        lab-6/lab-6.h
 )
