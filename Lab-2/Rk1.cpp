@@ -26,5 +26,5 @@ int main() {
 
     std::cout << "\nSum pervih " << m << " slagaemih= " << sum << std::endl;
 
-    return ;
+    return 0;
 }
