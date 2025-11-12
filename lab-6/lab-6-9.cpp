@@ -1,0 +1,30 @@
+#include <iostream>
+#include <list>
+#include "lab-6-9.h"
+
+void printList(const std::list<int>& lst, const std::string& name) {
+    std::cout << name << " = {";
+    for (auto it = lst.begin(); it != lst.end(); ++it) {
+        std::cout << *it;
+        if (std::next(it) != lst.end()) {
+            std::cout << ", ";
+        }
+    }
+    std::cout << "}" << std::endl;
+}
+
+int main() {
+    // Тестовые случаи
+    std::list<int> test1 = {1, 5, 4, -3};
+
+    std::cout << "Before Sort:" << std::endl;
+    printList(test1, "test1");
+
+    // Применяем функцию
+    Sort(test1);
+
+    std::cout << "\nAfter Sort (descending):" << std::endl;
+    printList(test1, "test1");
+
+    return 0;
+}
